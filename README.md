@@ -3,17 +3,23 @@
 ---
 
 ## 🛠️ Set-up Procedure
+
 ```bash
-#Fork the GitHub repository.
-(1)`git clone` https://github.com/<their-username>/test-interface.git
-#Go to the project folder.
-(2)`cd` National Test Abhyash
-#Initialize a git repository.
-(3)`npm init -y`
-#Install all the dependencies.
-(4)`npm install` nodemon express cors express-validator mongodb mongoose dotenv
-#Connect to the mongodb connection string. Create a .env file at the root directory of the project and add the following.
-(5)PORT, MONGO_URI
-#To run the server, Write in the root directory
-(6)`nodemon` server.js
-```
+# 1. Fork the GitHub repository and clone your fork
+git clone https://github.com/<your-username>/test-interface.git
+
+# 2. Navigate to the project folder
+cd test-interface
+
+# 3. Initialize a Node.js project (creates package.json)
+npm init -y
+
+# 4. Install all required dependencies
+npm install express cors express-validator mongodb mongoose dotenv nodemon
+
+# 5. Create a .env file in the root directory and add:
+# PORT=5000
+# MONGO_URI=mongodb://localhost:27017/test-interface
+
+# 6. Start the development server with nodemon
+npx nodemon server.js
